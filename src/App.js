@@ -21,17 +21,23 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <header>
-        <h1>ArcGIS Online Item Manager</h1>
-        <SignInButton user={user} />
-      </header>
-      {user ? (
-        <Gallery portal={portal} user={user} />
-      ) : (
-        <p>Please sign in to view your items.</p>
-      )}
+
+    <div className="container">
+      <div className="row text-center">
+        <div>
+          <header>
+            <h1>ArcGIS Online Item Manager</h1>
+            <SignInButton user={user} />
+          </header>
+          {user ? (
+            <Gallery portal={portal} user={user} />
+          ) : (
+            <p>Please sign in to view your items.</p>
+          )}
+        </div>
+      </div>
     </div>
+
   );
 }
 
