@@ -76,7 +76,7 @@ function Gallery({ portal }) {
 
   return (
     <div>
-      <h2>Your Items</h2>
+      <h2>Here are Your Items</h2>
       {items.length === 0 ? (
         <p>No items found</p>  // Handle the case when no items are returned
       ) : (

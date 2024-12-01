@@ -99,7 +99,7 @@
 
 // export default ItemCard;
 
-
+//* NEW WAY OF GRABBING AUTHENTICATION 
 import React from "react";
 import IdentityManager from "@arcgis/core/identity/IdentityManager";
 
@@ -160,7 +160,7 @@ function ItemCard({ item, portal }) {
         </span>
         <button
           className="btn btn-primary"
-          onClick={() => updateTags(item.id, portal.user.username, portal)}
+          onClick={() => updateTags(item.id, portal.user.username, portal)} //* The Onclick handler now calls the "updateTags" function with the      necessary arguments (item.id, portal.user.username, and portal) that's being exported from the itemAction utility. 
         >
           Update Tags
         </button>

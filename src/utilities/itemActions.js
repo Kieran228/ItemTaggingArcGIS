@@ -1,4 +1,4 @@
-export function updateTags(itemId, username, portal) {
+export function updateTags(portal) {
     const token = portal.credential.token;
     const updateUrl = "https://www.arcgis.com/sharing/rest/content/users/kierancaraway/items/d308e1530e8f4ac899f403d230723236/update";
   
