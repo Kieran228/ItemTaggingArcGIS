@@ -22,8 +22,8 @@ function App() {
 
   return (
 
-    <div className="container">
-      <div className="row text-center">
+    <div className="container text-center">
+
         <div>
           <header>
             <h1>ArcGIS Online Item Manager</h1>
@@ -35,7 +35,7 @@ function App() {
             <p>Please sign in to view your items.</p>
           )}
         </div>
-      </div>
+      
     </div>
 
   );

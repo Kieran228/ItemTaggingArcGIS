@@ -3,7 +3,7 @@ import { signInOrOut } from "../utilities/auth";
 
 function SignInButton({ user }) {
   return (
-    <button onClick={signInOrOut}>
+    <button className="btn btn-primary" onClick={signInOrOut}>
       {user ? `Sign Out (${user.username})` : "Sign In"}
     </button>
   );
