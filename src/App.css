@@ -1,17 +1,18 @@
 .app-container {
   display: flex;
+  align-items: center;
   justify-content: center;
-  /* align-items: center; */
-  height: 100vh;
 }
 
 .main-card {
   width: 80%;
-  max-width: 500px;
+  height: auto;
+  /* max-width: 500px; */
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .login-section {

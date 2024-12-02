@@ -3,8 +3,8 @@ import { signInOrOut } from "../utilities/auth";
 
 function SignInButton({ user }) {
   return (
-    <button className="btn btn-primary" onClick={signInOrOut}>
-      {user ? `Sign Out (${user.username})` : "Sign In"}
+    <button className="sign-in-btn btn btn-primary" onClick={signInOrOut}>
+      {user ? `Sign Out (${user.username})` : "Login"}
     </button>
   );
 }
