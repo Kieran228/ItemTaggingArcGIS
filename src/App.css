@@ -1,3 +1,7 @@
+body {
+  font-family: 'Open Sans';
+}
+
 .app-container {
   display: flex;
   align-items: center;
@@ -7,7 +11,7 @@
 .main-card {
   width: 80%;
   height: auto;
-  /* max-width: 500px; */
+  max-width: 500px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
