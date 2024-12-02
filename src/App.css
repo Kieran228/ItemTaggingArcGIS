@@ -1,17 +1,31 @@
+html,
 body {
-  font-family: 'Open Sans';
+  height: 100%;
+  /* Ensure the html and body take up full height */
+  margin: 0;
+  /* Remove default margin */
+  font-family: 'Open Sans', sans-serif;
+  /* Added fallback font */
+  overflow: auto;
+  /* Allow scrolling if content overflows */
 }
 
 .app-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Use min-height instead of height to allow scrolling */
+  padding: 20px;
+  /* Add padding for some spacing */
+  box-sizing: border-box;
+  /* Include padding in the height calculation */
 }
 
 .main-card {
-  width: 80%;
   height: auto;
-  max-width: 500px;
+  max-width: 90%;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -23,33 +37,31 @@ body {
   margin-top: 20px;
 }
 
-.sign-in-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 200px;
-  margin: 10px 0;
-}
-
-.sign-in-btn.logout {
-  background-color: #f44336;
-}
-
-.sign-in-btn.login {
-  background-color: #4CAF50;
-}
-
+.sign-in-btn,
 .logout-button {
   padding: 10px 20px;
-  background-color: #f44336;
+  font-size: 16px;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 200px;
   margin: 10px 0;
+}
+
+.sign-in-btn {
+  background-color: #4CAF50;
+  /* Default sign-in button color */
+}
+
+.sign-in-btn.logout,
+.logout-button {
+  background-color: #f44336;
+  /* Logout button color */
+}
+
+item-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

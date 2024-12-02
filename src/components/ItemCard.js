@@ -149,7 +149,7 @@ function ItemCard({ item, portal }) {
   }
 
   return (
-    <div style={{ float: "left", padding: "10px", display: "inline-block" }}>
+    <div style={{  padding: "10px", placeItems: "center" }}>
       <calcite-card>
         <img slot="thumbnail" src={item.thumbnailUrl} alt={item.title} />
         <span
