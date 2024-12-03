@@ -8,7 +8,7 @@ body {
   /* Added fallback font */
   overflow: auto;
   /* Allow scrolling if content overflows */
-  background-color: antiquewhite;
+  background-color: honeydew;
 }
 
 .app-container {
