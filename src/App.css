@@ -80,7 +80,8 @@ item-gallery {
   .item-gallery {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     flex-wrap: wrap;
+    place-content: center;
   }
 }
